@@ -1,2 +1,4 @@
-# stadia_marketing_research
+# Stadia Marketing Research
 Marketing Research about Google Stadia
+
+# Useful Links
