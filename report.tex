@@ -1,0 +1,143 @@
+\documentclass[a4paper,12pt]{article}
+\usepackage[english]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsfonts}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{color}
+
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage[toc,page]{appendix}
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,257mm},
+ left=20mm,
+ top=20mm,
+ }
+ \usepackage{hyperref}
+ \hypersetup{
+    bookmarks=true,         % show bookmarks bar?
+    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
+    pdftoolbar=true,        % show Acrobat’s toolbar?
+    pdfmenubar=true,        % show Acrobat’s menu?
+    pdffitwindow=false,     % window fit to page when opened
+    pdfstartview={FitH},    % fits the width of the page to the window
+    pdftitle={My title},    % title
+    pdfauthor={Author},     % author
+    pdfsubject={Subject},   % subject of the document
+    pdfcreator={Creator},   % creator of the document
+    pdfproducer={Producer}, % producer of the document
+    pdfkeywords={keyword1, key2, key3}, % list of keywords
+    pdfnewwindow=true,      % links in new PDF window
+    colorlinks=false,       % false: boxed links; true: colored links
+    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
+    citecolor=green,        % color of links to bibliography
+    filecolor=magenta,      % color of file links
+    urlcolor=cyan           % color of external links
+}
+
+\begin{document}
+\begin{titlepage}
+%----------------------------------------------------------------------------------------
+%	HEADING SECTIONS
+%----------------------------------------------------------------------------------------
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+\setlength{\topmargin}{0in}
+\center % Center everything on the page
+ 
+ \begin{minipage}{0.4\textwidth}
+\begin{flushleft} \large
+\hspace*{-0.5cm}
+\includegraphics[scale=4]{images/uni_logo.png}\\
+\end{flushleft}
+\end{minipage}
+~
+\begin{minipage}{0.5\textwidth}
+\begin{flushright} \large
+\hspace*{2cm}
+\includegraphics[scale=0.6]{images/fac_logo.png}\\
+\end{flushright}
+\end{minipage}\\[1cm]
+
+\textsc{\Large Cairo University - Faculty of Engineering}\\[0.5cm] % Major
+\textsc{Computer Engineering Department} \\[0.5cm] 
+\textsc{Marketing - Spring 2020} \\[0.5cm] 
+% Name of your heading such as course name
+\textsc{\large }\\[0.5cm] % Minor heading such as course title
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge \bfseries Google Stadia}\\[0.4cm] % Title of your document
+\HRule \\[1cm]
+ 
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTION
+%----------------------------------------------------------------------------------------
+\begin{minipage}{0.8\textwidth}
+\begin{flushleft} 
+\textbf{Mohamed Shawky Zaky} \\
+\texttt{SEC:1, BN:20} \\[0.5cm]
+
+\textbf{Remonda Talaat Eskarous} \\
+\texttt{SEC:1, BN:20} \\[0.5cm]
+
+\textbf{Evram Youssef Helmy} \\
+\texttt{SEC:1, BN:9} \\[0.5cm]
+
+\textbf{Mahmoud Osman Adas} \\
+\texttt{SEC:2, BN:21} \\[0.5cm]
+
+\textbf{Kareem Omar Mostafa} \\
+\texttt{SEC:2, BN:6} \\[0.5cm]
+\end{flushleft}
+\end{minipage}\\[6cm]
+
+\end{titlepage}
+
+\thispagestyle{empty}
+
+\tableofcontents
+\listoffigures
+\clearpage
+
+\pagenumbering{arabic}
+
+%----------------------------------------------------------------------------------------
+%	REPORT SECTIONS
+%----------------------------------------------------------------------------------------
+\section{Introduction}
+\input{core/introduction}
+
+\section{Type of Product}
+\input{core/product_type}
+
+\section{Marketing Mix}
+\input{core/market_mix}
+
+\section{SWOT Analysis}
+\input{core/swot}
+
+\section{Pricing Strategy}
+\input{core/pricing}
+
+\section{Promotion Strategy}
+\input{core/promotion}
+
+\section{Recommendations of Reseacher}
+\input{core/recommendation}
+
+\newpage
+\addcontentsline{toc}{section}{References}
+\begin{thebibliography}{9}
+\bibitem{Stuff}
+Stuff Stuff Stuff.
+\end{thebibliography}
+
+\end{document}
