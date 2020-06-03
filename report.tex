@@ -8,37 +8,8 @@
 \usepackage{listings}
 \usepackage{xcolor}
 \usepackage{color}
-
-\usepackage[colorinlistoftodos]{todonotes}
-\usepackage[toc,page]{appendix}
-\usepackage{geometry}
- \geometry{
- a4paper,
- total={170mm,257mm},
- left=20mm,
- top=20mm,
- }
- \usepackage{hyperref}
- \hypersetup{
-    bookmarks=true,         % show bookmarks bar?
-    unicode=false,          % non-Latin characters in Acrobat’s bookmarks
-    pdftoolbar=true,        % show Acrobat’s toolbar?
-    pdfmenubar=true,        % show Acrobat’s menu?
-    pdffitwindow=false,     % window fit to page when opened
-    pdfstartview={FitH},    % fits the width of the page to the window
-    pdftitle={My title},    % title
-    pdfauthor={Author},     % author
-    pdfsubject={Subject},   % subject of the document
-    pdfcreator={Creator},   % creator of the document
-    pdfproducer={Producer}, % producer of the document
-    pdfkeywords={keyword1, key2, key3}, % list of keywords
-    pdfnewwindow=true,      % links in new PDF window
-    colorlinks=false,       % false: boxed links; true: colored links
-    linkcolor=red,          % color of internal links (change box color with linkbordercolor)
-    citecolor=green,        % color of links to bibliography
-    filecolor=magenta,      % color of file links
-    urlcolor=cyan           % color of external links
-}
+\usepackage[hidelinks]{hyperref}
+\newcommand{\link}[1]{{\color{blue}\href{#1}{#1}}}
 
 \begin{document}
 \begin{titlepage}
@@ -114,21 +85,27 @@
 %----------------------------------------------------------------------------------------
 \section{Introduction}
 \input{core/introduction}
+\newpage
 
 \section{Type of Product}
 \input{core/product_type}
+\newpage
 
-\section{Marketing Mix}
+\section{Marketing Mix (4Ps)}
 \input{core/market_mix}
+\newpage
 
 \section{SWOT Analysis}
 \input{core/swot}
+\newpage
 
 \section{Pricing Strategy}
 \input{core/pricing}
+\newpage
 
 \section{Promotion Strategy}
 \input{core/promotion}
+\newpage
 
 \section{Recommendations of Reseacher}
 \input{core/recommendation}
@@ -136,8 +113,16 @@
 \newpage
 \addcontentsline{toc}{section}{References}
 \begin{thebibliography}{9}
-\bibitem{Stuff}
-Stuff Stuff Stuff.
+
+\bibitem{stadia_website}
+Stadia Developers Website : \\ \link{https://stadia.dev}
+
+\bibitem{wikipedia}
+Wikipedia Article : \\ \link{https://en.wikipedia.org/wiki/Google\_Stadia}
+
+\bibitem{pocket_lint}
+Pocket-lint Article : \\ \link{https://www.pocket-lint.com/games/news/google/143589-google-stadia-explained-price-release-date-games-list}
+
 \end{thebibliography}
 
 \end{document}
